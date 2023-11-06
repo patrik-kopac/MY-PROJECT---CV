@@ -170,10 +170,9 @@
 .main {
     width: 85vw;
     height: auto;
-    margin: 10vh auto;
+    margin: 0 auto;
     
     display: grid;
-    row-gap: 10vh;
     grid-template-areas:
     "intro"
     "skills"
@@ -183,6 +182,10 @@
     "interests"
     "contacts"
     ;
+}
+
+.main section {
+    margin-top: 10vh;
 }
 
 /**********************intro************************/
@@ -271,8 +274,69 @@
 
 /**********************skills************************/
 .skills {
+    width: 100%;
+    height: 30vh;
+
     grid-area: skills;
+
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas: 
+    "html css git-github"
+    "canva js git-github"
+    ;
 }
+
+.skills h3 {
+    font-size: 30px;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+}
+
+.skills p {
+    font-size: 20px;
+    text-align: center;
+}
+
+/***********html***********/
+.html {
+    grid-area: html;
+    background-color: rgb(194, 145, 201);
+}
+
+/***********css***********/
+.css {
+    grid-area: css;
+    background-color: rgb(146, 55, 158);
+}
+
+/***********git-github***********/
+.git-github {
+    grid-area: git-github;
+    background-color: rgb(74, 28, 80);
+}
+
+/***********canva***********/
+.canva {
+    grid-area: canva;
+    background-color: rgb(146, 55, 158);
+}
+
+/***********js***********/
+.js {
+    grid-area: js;
+    background-color: rgb(194, 145, 201);
+}
+
+.skills div:hover {
+    background-color: rgb(185, 105, 105);
+
+    transform: scale(1.1);
+    transition: 0.8s;
+}
+
+
 
 /**********************projects************************/
 .projects {
