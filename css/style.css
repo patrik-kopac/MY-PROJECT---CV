@@ -161,3 +161,67 @@
     border: 1px solid white;
     border-radius: 50%;
 }
+
+
+
+
+
+/************************************MAIN*********************************************/
+.main {
+    width: 85vw;
+    height: auto;
+    margin: 0 auto;
+    
+    display: grid;
+    row-gap: 10vh;
+    grid-template-areas:
+    "intro"
+    "about-me"
+    "skills"
+    "projects"
+    "future"
+    "reviews"
+    "interests"
+    "contacts"
+    ;
+}
+
+/**********************intro************************/
+.intro {
+    grid-area: intro;
+}
+
+/**********************about-me************************/
+.about-me {
+    grid-area: about-me;
+}
+
+/**********************skills************************/
+.skills {
+    grid-area: skills;
+}
+
+/**********************projects************************/
+.projects {
+    grid-area: projects;
+}
+
+/**********************future************************/
+.future {
+    grid-area: future;
+}
+
+/**********************reviews************************/
+.reviews {
+    grid-area: reviews;
+}
+
+/**********************interests************************/
+.interests {
+    grid-area: interests;
+}
+
+/**********************contacts************************/
+.contacts {
+    grid-area: contacts;
+}
