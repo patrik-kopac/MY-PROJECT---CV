@@ -19,3 +19,43 @@
 
 
 
+/************************************NAV*********************************************/
+.nav {
+    width: 100vw;
+    height: 100px;
+
+    background-color: purple;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+/**********************brand************************/
+.brand {
+    color: silver;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    text-align: center;
+}
+
+
+
+/**********************navigation************************/
+.navigation li {
+    display: inline-block;
+    text-align: center;
+
+    color: white;
+    font-size: 22px;
+}
+
+.navigation li:not(:first-child) {
+    margin-left: 20px;
+}
