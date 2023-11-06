@@ -39,25 +39,50 @@
 
 /**********************brand************************/
 .brand {
-    color: rgb(218, 211, 211);
-    font-size: 2.5rem;
-    font-family: 'Dancing Script', cursive;
+    text-decoration: none;
+}
 
-    text-align: center;
+.brand:hover {
+    transform: scale(1.1);
+    transition: 0.8s;
+
+    color: rgb(236, 233, 233);
+}
+
+.brand h1 {
+    color: rgb(218, 211, 211);
+    font-size: 40px;
+    font-family: 'Dancing Script', cursive;
 }
 
 
 
 /**********************navigation************************/
-.navigation li {
+.navigation a {
     display: inline-block;
     text-align: center;
 
+    padding: 10px 5px;
+    border: 1px solid rgb(218, 211, 211);
+    border-radius: 20px;
+
     color: white;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 700;
+    text-decoration: none;
 }
 
-.navigation li:not(:first-child) {
+.navigation a:not(:first-child) {
     margin-left: 20px;
+}
+
+.navigation a:hover {
+    transform: scale(1.1);
+    transition: 0.8s;
+
+    background-color: rgb(179, 62, 179);
+}
+
+.navigation li {
+    list-style: none;
 }
