@@ -176,7 +176,6 @@
     row-gap: 10vh;
     grid-template-areas:
     "intro"
-    "about-me"
     "skills"
     "projects"
     "future"
@@ -188,13 +187,83 @@
 
 /**********************intro************************/
 .intro {
+    width: 100%;
+    height: 60vh;
+
     grid-area: intro;
+
+    display: flex;
+    justify-content: space-between;
 }
 
-/**********************about-me************************/
 .about-me {
-    grid-area: about-me;
+    width: 40vw;
+    height: auto;
 }
+
+.about-me h3 {
+    font-size: 35px;
+    text-align: center;
+}
+
+.about-me p {
+    font-size: 20px;
+}
+
+.status {
+    width: 40vw;
+    height: auto;
+
+    display: grid;
+    grid-gap: 10px;
+    grid-auto-rows: 1fr;
+    grid-template-areas:
+    "address address nationality"
+    "family age nationality"
+    "family job job"
+    ;
+}
+
+/***********current-adress**********/
+.current-address {
+    grid-area: address;
+    background-color: aqua;
+}
+
+/***********family-status**********/
+.family-status {
+    grid-area: family;
+    background-color: yellow;
+}
+
+/***********job-situation**********/
+.job-situation {
+    grid-area: job;
+    background-color: crimson;
+}
+
+/*************age******************/
+.age {
+    grid-area: age;
+    background-color: green;
+}
+
+/***********nationality***********/
+.nationality {
+    grid-area: nationality;
+    background-color: orange;
+}
+
+.status-item {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 2rem 1rem;
+    text-align: center;
+
+    font-size: 30px;
+    font-weight: 700;
+} 
+
 
 /**********************skills************************/
 .skills {
