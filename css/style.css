@@ -170,7 +170,7 @@
 .main {
     width: 85vw;
     height: auto;
-    margin: 0 auto;
+    margin: 10vh auto;
     
     display: grid;
     row-gap: 10vh;
@@ -208,6 +208,10 @@
 
 .about-me p {
     font-size: 20px;
+}
+
+.why-cz {
+    margin-top: 5vh;
 }
 
 .status {
