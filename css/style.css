@@ -180,10 +180,9 @@
 
 /************************************MAIN*********************************************/
 .main {
-    width: 85vw;
+    width: 100vw;
     height: auto;
-    margin: 0 auto;
-    
+
     display: flex;
     flex-direction: column;
     row-gap: 10vh;
@@ -192,8 +191,9 @@
 
 /**********************intro************************/
 .intro {
-    width: 100%;
+    width: 85vw;
     height: auto;
+    margin: 0 auto;
 
     display: grid;
     grid-template-columns: repeat(11, 1fr);
@@ -307,25 +307,33 @@
     width: 100%;
     height: auto;
 
+    background-color: lightgreen;
+}
+
+.skills-container {
+    width: 85vw;
+    height: auto;
+    margin: 0 auto;
+
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: repeat(11, 1fr);
     grid-template-rows: repeat(7, 1fr);
 }
 
-.skills h3 {
+.skills-container h3 {
     font-size: 30px;
     color: white;
     font-weight: 700;
     text-align: center;
 }
 
-.skills p {
+.skills-container p {
     font-size: 20px;
     text-align: center;
 }
 
-.skills div:hover {
+.skills-container div:hover {
     background-color: rgb(185, 105, 105);
 
     transform: scale(1.1);
@@ -425,8 +433,9 @@
 
 /**********************projects************************/
 .projects {
-    width: 100%;
+    width: 85vw;
     height: auto;
+    margin: 0 auto;
 
     text-align: center;
 
@@ -527,8 +536,9 @@
 
 /**********************future************************/
 .future {
-    width: 100%;
+    width: 85vw;
     height: auto;
+    margin: 0 auto;
 
     text-align: center;
 
