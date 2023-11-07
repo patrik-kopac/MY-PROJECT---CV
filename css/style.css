@@ -1033,3 +1033,15 @@
     grid-column: 10 / 12;
     grid-row: 3 / 4;
 }
+
+/**********************FOOTER************************/
+.footer {
+    width: 100vw;
+    height: 5vh;
+
+    background-color: rgb(240, 178, 190);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
