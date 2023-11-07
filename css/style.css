@@ -24,7 +24,7 @@
     width: 100vw;
     height: 100px;
 
-    background-color: purple;
+    background-color: #7E3FB1;
 
     position: fixed;
     left: 0;
@@ -61,7 +61,7 @@
 }
 
 .brand h1 {
-    color: rgb(218, 211, 211);
+    color: rgb(208 204 204 / 84%);
     font-size: 40px;
     font-family: 'Dancing Script', cursive;
 }
@@ -74,10 +74,8 @@
     text-align: center;
 
     padding: 10px 5px;
-    border: 1px solid rgb(218, 211, 211);
-    border-radius: 20px;
 
-    color: white;
+    color: rgb(208 204 204);
     font-size: 20px;
     font-weight: 700;
     text-decoration: none;
@@ -92,6 +90,9 @@
     transition: 0.8s;
 
     background-color: rgb(179, 62, 179);
+
+    border: 1px solid rgb(208 204 204 / 51%);
+    border-radius: 20px;
 }
 
 .nav-itself li {
@@ -108,7 +109,7 @@
     height: 70vh;
     padding-top: 20vh;
 
-    background-color: rgb(218, 211, 211);
+    background: linear-gradient(#6416a3, rgb(208 204 204 / 51%));
 }
 
 .hero-container {
@@ -188,6 +189,8 @@
     display: flex;
     flex-direction: column;
     row-gap: 10vh;
+
+    background-color: rgb(208 204 204 / 51%);
 }
 
 
@@ -206,6 +209,7 @@
 .h2 {
     text-align: center;
     font-size: 40px;
+    color: #7E3FB1;
 }
 
 .intro h3 {
@@ -224,6 +228,13 @@
     border-radius: 50px;
     padding: 0.5rem 0.2rem;
     text-align: center;
+
+    background-color: #7E3FB1;
+    color: rgb(208 204 204);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 } 
 
 .status-item p {
@@ -259,48 +270,36 @@
 .current-address {
     grid-column: 2 / 5;
     grid-row: 10 / 11;
-    
-    background-color: aqua;
 }
 
 /***********family-status**********/
 .family-status {
     grid-column: 10 / 12;
     grid-row: 9 / 10;
-    
-    background-color: yellow;
 }
 
 /***********job-situation**********/
 .job-situation {
     grid-column: 8 / 11;
     grid-row: 10 / 11;
-    
-    background-color: crimson;
 }
 
 /*************age******************/
 .age {
     grid-column: 4 / 6;
     grid-row: 9 / 10;
-    
-    background-color: green;
 }
 
 /***********nationality***********/
 .nationality {
     grid-column: 1 / 3;
     grid-row: 9 / 10;
-    
-    background-color: orange;
 }
 
 /***********education***********/
 .education {
     grid-column: 7 / 9;
     grid-row: 9 / 10;
-    
-    background-color: orange;
 }
 
 
@@ -309,7 +308,7 @@
     width: 100%;
     height: auto;
 
-    background-color: lightgreen;
+    background-color: #7E3FB1;
 }
 
 .skills-container {
@@ -325,9 +324,13 @@
 
 .skills-container h3 {
     font-size: 30px;
-    color: white;
+    color: #7E3FB1;
     font-weight: 700;
     text-align: center;
+}
+
+.skills .h2 {
+    color: rgb(208 204 204);
 }
 
 .skills-container p {
@@ -337,6 +340,8 @@
 
 .skills-container div {
     border-radius: 10px;
+
+    background-color: rgb(208 204 204);
 }
 
 
@@ -467,12 +472,14 @@
 .project1, 
 .project2,
 .project3 {
-    border: 1px solid grey;
+    border: 2px solid #7E3FB1;
     border-radius: 10px;
     
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    background-color: #c8c2c2ba;
 }
 
 .projects h3 {
@@ -486,10 +493,10 @@
 .projects a {
     font-weight: 700;
     text-decoration: none;
-    background-color: red;
+    background-color: #7E3FB1;
+    color: rgb(208 204 204);
 
     width: 50%;
-    border: 1px solid silver;
     border-radius: 10px;
     padding: 10px 5px;
     align-self: center;
@@ -539,7 +546,7 @@
     width: 100%;
     height: auto;
 
-    background-color: lightgray;
+    background-color: #7E3FB1;
 }
 
 .future-container {
@@ -553,6 +560,10 @@
     grid-template-columns: repeat(11, 1fr);
     grid-template-rows: repeat(15, 1fr);
     gap: 1rem;
+}
+
+.future .h2 {
+        color: rgb(208 204 204);
 }
 
 .future .h3 {
@@ -789,7 +800,7 @@
     border: 1px solid silver;
     border-radius: 10px;
 
-    background-color: rgb(247, 231, 231);
+    background-color: #c8c2c2ba;
 
     display: flex;
     flex-direction: column;
@@ -809,7 +820,7 @@
     width: 100%;
     height: auto;
 
-    background-color: rgb(183, 233, 181);
+    background-color: #7E3FB1;
 }
 
 .interests-container {
@@ -828,6 +839,10 @@
 .interests-container > div {
     border: 1px solid grey;
     border-radius: 10px;
+}
+
+.interests .h2 {
+    color: rgb(208 204 204);
 }
 
 .interest-dogs,
@@ -991,8 +1006,10 @@
 
 .contacts a {
     font-size: 25px;
-    color: black;
-    background-color: rgb(127, 241, 127);
+    color: rgb(208 204 204);
+    background-color: #7E3FB1;
+    text-decoration: none;
+    text-transform: uppercase;
 
     display: flex;
     align-items: center;
@@ -1039,7 +1056,8 @@
     width: 100vw;
     height: 5vh;
 
-    background-color: rgb(240, 178, 190);
+    background-color: rgb(92, 91, 91);
+    color: rgb(208 204 204);
 
     display: flex;
     justify-content: center;
