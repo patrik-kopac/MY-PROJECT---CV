@@ -184,16 +184,9 @@
     height: auto;
     margin: 0 auto;
     
-    display: grid;
-    grid-template-areas:
-    "intro"
-    "skills"
-    "projects"
-    "future"
-    "reviews"
-    "interests"
-    "contacts"
-    ;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10vh;
 }
 
 .main section {
@@ -204,8 +197,6 @@
 .intro {
     width: 100%;
     height: 60vh;
-
-    grid-area: intro;
 
     display: flex;
     justify-content: space-between;
@@ -289,8 +280,6 @@
     width: 100%;
     height: 30vh;
 
-    grid-area: skills;
-
     display: grid;
     grid-gap: 1rem;
     grid-template-areas: 
@@ -355,8 +344,6 @@
 
 /**********************projects************************/
 .projects {
-    grid-area: projects;
-
     width: 100%;
     height: 80vh;
     text-align: center;
@@ -435,21 +422,12 @@
 
 
 /**********************future************************/
-.future {
-    grid-area: future;
-}
+
 
 /**********************reviews************************/
-.reviews {
-    grid-area: reviews;
-}
+
 
 /**********************interests************************/
-.interests {
-    grid-area: interests;
-}
+
 
 /**********************contacts************************/
-.contacts {
-    grid-area: contacts;
-}
