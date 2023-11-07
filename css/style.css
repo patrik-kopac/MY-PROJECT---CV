@@ -796,12 +796,181 @@
 
 .review-name h3 {
     text-decoration: underline;
+    font-size: 25px;
 }
 
 
 
 
+
 /**********************interests************************/
+.interests {
+    width: 100%;
+    height: auto;
+
+    background-color: rgb(183, 233, 181);
+}
+
+.interests-container {
+    width: 85vw;
+    height: auto;
+    margin: 0 auto;
+
+    text-align: center;
+
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+    gap: 1rem;
+}
+
+.interests-container > div {
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+.interest-dogs,
+.interest-family,
+.interest-food,
+.interest-hiking,
+.interest-hockey,
+.interest-mma,
+.interest-movies,
+.interest-tattoos,
+.interest-travelling {
+    position: relative;
+}
+
+.interests-container h3 {
+    font-size: 25px;
+
+    position: absolute;
+    left: 15px;
+    top: 15px;
+}
+
+.interest-img-container {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 100%;
+    height: calc(100% - 24px);
+}
+
+.h2-interests {
+    grid-column: 5 / 8;
+    grid-row: 2 / 3;
+}
+
+.interest-family {
+    grid-column: 1 / 4;
+    grid-row: 4 / 8;
+}
+
+.interests-img-family {
+    width: 100%;
+    height: 100%;
+
+    background-image: url(/files/images/alexey-fedenkov-BaCZYH9RLmQ-unsplash.jpg);
+}
+
+.interest-food {
+    grid-column: 4 / 5;
+    grid-row: 4 / 11;
+}
+
+.interests-img-food {
+    width: 100%;
+    height: 100%;
+
+    background-image: url(/files/images/alexey-fedenkov-BaCZYH9RLmQ-unsplash.jpg);
+}
+
+.interest-travelling {
+    grid-column: 1 / 4;
+    grid-row: 8 / 11;
+}
+
+.interests-img-travelling {
+    width: 100%;
+    height: 100%;
+
+    background-image: url(/files/images/alexey-fedenkov-BaCZYH9RLmQ-unsplash.jpg);
+}
+
+.interest-movies {
+    grid-column: 5 / 7;
+    grid-row: 8 / 11;
+}
+
+.interests-img-movies {
+    width: 100%;
+    height: 100%;
+
+    background-image: url(/files/images/alexey-fedenkov-BaCZYH9RLmQ-unsplash.jpg);
+}
+
+.interest-hiking {
+    grid-column: 5 / 8;
+    grid-row: 4 / 8;
+}
+
+.interests-img-hiking {
+    width: 100%;
+    height: 100%;
+
+    background-image: url(/files/images/alexey-fedenkov-BaCZYH9RLmQ-unsplash.jpg);
+}
+
+.interest-tattoos {
+    grid-column: 8 / 12;
+    grid-row: 4 / 6;
+}
+
+.interests-img-tattoos {
+    width: 100%;
+    height: 100%;
+
+    background-image: url(/files/images/alexey-fedenkov-BaCZYH9RLmQ-unsplash.jpg);
+}
+
+.interest-hockey {
+    grid-column: 7 / 11;
+    grid-row: 8 / 11;
+}
+
+.interests-img-hockey {
+    width: 100%;
+    height: 100%;
+
+    background-image: url(/files/images/alexey-fedenkov-BaCZYH9RLmQ-unsplash.jpg);
+}
+
+.interest-mma {
+    grid-column: 11 / 12;
+    grid-row: 6 / 11;
+}
+
+.interests-img-mma {
+    width: 100%;
+    height: 100%;
+
+    background-image: url(/files/images/alexey-fedenkov-BaCZYH9RLmQ-unsplash.jpg);
+}
+
+.interest-dogs {
+    grid-column: 8 / 11;
+    grid-row: 6 / 8;
+}
+
+.interests-img-dogs {
+    width: 100%;
+    height: 100%;
+
+    background-image: url(/files/images/alexey-fedenkov-BaCZYH9RLmQ-unsplash.jpg);
+}
+
 
 
 /**********************contacts************************/
