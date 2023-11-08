@@ -16,6 +16,18 @@
     text-transform: uppercase;
 }
 
+* {
+    --color-purple: #6F2564;
+    --color-light-purple: #E0A2D7;
+    --color-dark-purple: #491842;
+    --color-pink: #C249B0;
+    --color-grey: rgb(208 204 204 / 51%);
+    --color-lightest-grey: rgb(208 204 204);
+    --color-light-grey: #c8c2c2ba;
+    --color-dark-grey: rgb(92, 91, 91);
+    --color-black: black;
+    --color-white: white;
+}
 
 
 
@@ -24,7 +36,7 @@
     width: 100vw;
     height: 100px;
 
-    background-color: #7E3FB1;
+    background-color: var(--color-purple);
 
     position: fixed;
     left: 0;
@@ -57,11 +69,11 @@
     transform: scale(1.1);
     transition: 0.8s;
 
-    color: rgb(236, 233, 233);
+    color: var(--color-dark-purple);
 }
 
 .brand h1 {
-    color: rgb(208 204 204 / 84%);
+    color: var(--color-light-grey);
     font-size: 40px;
     font-family: 'Dancing Script', cursive;
 }
@@ -74,8 +86,9 @@
     text-align: center;
 
     padding: 10px 5px;
+    border-radius: 20px;
 
-    color: rgb(208 204 204);
+    color: var(--color-light-grey);
     font-size: 20px;
     font-weight: 700;
     text-decoration: none;
@@ -89,9 +102,9 @@
     transform: scale(1.1);
     transition: 0.8s;
 
-    background-color: rgb(179, 62, 179);
+    background-color: var(--color-grey);
 
-    border: 1px solid rgb(208 204 204 / 51%);
+    border: 1px solid var(--color-grey);
     border-radius: 20px;
 }
 
@@ -109,7 +122,7 @@
     height: 70vh;
     padding-top: 20vh;
 
-    background: linear-gradient(#6416a3, rgb(208 204 204 / 51%));
+    background-color: var(--color-purple);
 }
 
 .hero-container {
@@ -138,20 +151,20 @@
 }
 
 .hero-btn {
-    color: purple;
+    color: var(--color-purple);
     font-size: 25px;
-    background-color: rgb(191 183 183);
+    background-color: var(--color-grey);
     text-decoration: none;
     
     width: 150px;
     text-align: center;
     padding: 10px 5px;
-    border: 1px solid white;
+    border: 1px solid var(--color-white);
     border-radius: 20px;
 }
 
 .hero-btn:hover {
-    background-color: rgb(250, 242, 242);
+    background-color: var(--color-light-grey);
 
     transform: scale(1.1);
     transition: 0.8s;
@@ -173,7 +186,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     
-    border: 1px solid white;
+    border: 1px solid var(--color-white);
     border-radius: 50%;
 }
 
@@ -190,7 +203,7 @@
     flex-direction: column;
     row-gap: 10vh;
 
-    background-color: rgb(208 204 204 / 51%);
+    background-color: var(--color-grey);
 }
 
 
@@ -209,7 +222,7 @@
 .h2 {
     text-align: center;
     font-size: 40px;
-    color: #7E3FB1;
+    color: var(--color-purple);
 }
 
 .intro h3 {
@@ -224,13 +237,13 @@
 }
 
 .status-item {
-    border: 1px solid black;
+    border: 1px solid var(--color-black);
     border-radius: 50px;
     padding: 0.5rem 0.2rem;
     text-align: center;
 
-    background-color: #7E3FB1;
-    color: rgb(208 204 204);
+    background-color: var(--color-purple);
+    color: var(--color-light-grey);
 
     display: flex;
     justify-content: center;
@@ -253,7 +266,7 @@
     grid-column: 1 / 6;
     grid-row: 4 / 9;
 
-    border: 1 px solid grey;
+    border: 1 px solid var(--color-grey);
     border-radius: 10px;
 }
 
@@ -262,7 +275,7 @@
     grid-column: 7 / 12;
     grid-row: 4 / 9;
 
-    border: 1 px solid grey;
+    border: 1 px solid var(--color-grey);
     border-radius: 10px;
 }
 
@@ -308,7 +321,7 @@
     width: 100%;
     height: auto;
 
-    background-color: #7E3FB1;
+    background-color: var(--color-purple);
 }
 
 .skills-container {
@@ -324,13 +337,13 @@
 
 .skills-container h3 {
     font-size: 30px;
-    color: #7E3FB1;
+    color: var(--color-purple);
     font-weight: 700;
     text-align: center;
 }
 
 .skills .h2 {
-    color: rgb(208 204 204);
+    color: var(--color-light-grey);
 }
 
 .skills-container p {
@@ -341,7 +354,7 @@
 .skills-container div {
     border-radius: 10px;
 
-    background-color: rgb(208 204 204);
+    background-color: var(--color-light-grey);
 }
 
 
@@ -356,7 +369,7 @@
     grid-column: 1 / 6;
     grid-row: 4 / 5;
 
-    background-color: rgb(194, 145, 201);
+    background-color: var(--color-light-purple);
 }
 
 /***********css***********/
@@ -364,7 +377,7 @@
     grid-column: 7 / 12;
     grid-row: 4 / 5;
 
-    background-color: rgb(194, 145, 201);
+    background-color: var(--color-light-purple);
 }
 
 /********git-github*******/
@@ -372,7 +385,7 @@
     grid-column: 7 / 12;
     grid-row: 5 / 6;
 
-    background-color: rgb(146, 55, 158);
+    background-color: var(--color-purple);
 }
 
 /***********canva***********/
@@ -380,7 +393,7 @@
     grid-column: 7 / 12;
     grid-row: 6 / 7;
 
-    background-color: rgb(194, 145, 201);
+    background-color: var(--color-light-purple);
 }
 
 /***********js***********/
@@ -388,7 +401,7 @@
     grid-column: 1 / 6;
     grid-row: 5 / 6;
 
-    background-color: rgb(146, 55, 158);
+    background-color: var(--color-purple);
 }
 
 /********eng-language******/
@@ -396,7 +409,7 @@
     grid-column: 1 / 6;
     grid-row: 6 / 7;
 
-    background-color: rgb(194, 145, 201);
+    background-color: var(--color-light-purple);
 }
 
 /********cze-language********/
@@ -404,7 +417,7 @@
     grid-column: 1 / 6;
     grid-row: 7 / 8;
 
-    background-color: rgb(146, 55, 158);
+    background-color: var(--color-purple);
 }
 
 /********svk-language********/
@@ -412,7 +425,7 @@
     grid-column: 7 / 12;
     grid-row: 7 / 8;
 
-    background-color: rgb(146, 55, 158);
+    background-color: var(--color-purple);
 }
 
 /***********ms-office*******/
@@ -420,7 +433,7 @@
     grid-column: 7 / 12;
     grid-row: 8 / 9;
 
-    background-color: rgb(194, 145, 201);
+    background-color: var(--color-light-purple);
 }
 
 /***********online-mkt*******/
@@ -428,7 +441,7 @@
     grid-column: 1 / 6;
     grid-row: 8 / 9;
 
-    background-color: rgb(194, 145, 201);
+    background-color: var(--color-light-purple);
 }
 
 
@@ -472,14 +485,14 @@
 .project1, 
 .project2,
 .project3 {
-    border: 2px solid #7E3FB1;
+    border: 2px solid var(--color-purple);
     border-radius: 10px;
     
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
-    background-color: #c8c2c2ba;
+    background-color: var(--color-grey);
 }
 
 .projects h3 {
@@ -493,8 +506,8 @@
 .projects a {
     font-weight: 700;
     text-decoration: none;
-    background-color: #7E3FB1;
-    color: rgb(208 204 204);
+    background-color: var(--color-purple);
+    color: var(--color-light-grey);
 
     width: 50%;
     border-radius: 10px;
@@ -503,7 +516,7 @@
 }
 
 .projects a:hover {
-    background-color: rgb(185, 105, 105);
+    background-color: var(--color-light-purple);
 
     transform: scale(1.05);
     transition: 0.8s;
@@ -546,7 +559,7 @@
     width: 100%;
     height: auto;
 
-    background-color: #7E3FB1;
+    background-color: var(--color-purple);
 }
 
 .future-container {
@@ -563,7 +576,7 @@
 }
 
 .future .h2 {
-        color: rgb(208 204 204);
+        color: var(--color-light-grey);
 }
 
 .future .h3 {
@@ -573,7 +586,7 @@
     justify-content: center;
     align-items: center;
 
-    border: 1px solid grey;
+    border: 1px solid var(--color-grey);
     border-radius: 10px;
 }
 
@@ -596,7 +609,7 @@
     grid-column: 2 / 5;
     grid-row: 4 / 5;
 
-    background-color: yellow;
+    background-color: var(--color-pink);
 }
 
 /***********future-project1***********/
@@ -604,7 +617,7 @@
     grid-column: 1 / 6;
     grid-row: 5 / 6;
 
-    background-color: rgb(194, 145, 201);
+    background-color: var(--color-light-purple);
 }
 
 /***********future-project2***********/
@@ -612,7 +625,7 @@
     grid-column: 1 / 6;
     grid-row: 6 / 7;
 
-    background-color: rgb(162, 79, 173);
+    background-color: var(--color-light-grey);
 }
 
 /***********future-project3***********/
@@ -620,7 +633,7 @@
     grid-column: 1 / 6;
     grid-row: 7 / 8;
 
-    background-color: rgb(194, 145, 201);
+    background-color: var(--color-light-purple);
 }
 
 /***********future-project4***********/
@@ -628,7 +641,7 @@
     grid-column: 1 / 6;
     grid-row: 8 / 9;
 
-    background-color: rgb(162, 79, 173);
+    background-color: var(--color-light-grey);
 }
 
 /***********future-project5***********/
@@ -636,7 +649,7 @@
     grid-column: 1 / 6;
     grid-row: 9 / 10;
 
-    background-color: rgb(194, 145, 201);
+    background-color: var(--color-light-purple);
 }
 
 /***********future-project6***********/
@@ -644,7 +657,7 @@
     grid-column: 1 / 6;
     grid-row: 10 / 11;
 
-    background-color: rgb(162, 79, 173);
+    background-color: var(--color-light-grey);
 }
 
 /***********future-project7***********/
@@ -652,7 +665,7 @@
     grid-column: 1 / 6;
     grid-row: 11 / 12;
 
-    background-color: rgb(194, 145, 201);
+    background-color: var(--color-light-purple);
 }
 
 /***********future-project8***********/
@@ -660,7 +673,7 @@
     grid-column: 1 / 6;
     grid-row: 12 / 13;
 
-    background-color: rgb(162, 79, 173);
+    background-color: var(--color-light-grey);
 }
 
 /***********future-project9***********/
@@ -668,7 +681,7 @@
     grid-column: 1 / 6;
     grid-row: 13 / 14;
 
-    background-color: rgb(194, 145, 201);
+    background-color: var(--color-light-purple);
 }
 
 /***********future-project10***********/
@@ -676,7 +689,7 @@
     grid-column: 1 / 6;
     grid-row: 14 / 15;
 
-    background-color: rgb(162, 79, 173);
+    background-color: var(--color-light-grey);
 }
 
 /***********h3-future-education***********/
@@ -684,7 +697,7 @@
     grid-column: 8 / 11;
     grid-row: 4 / 5;
 
-    background-color: yellow;
+    background-color: var(--color-pink);
 }
 
 /***********future-education1***********/
@@ -692,7 +705,7 @@
     grid-column: 7 / 10;
     grid-row: 5 / 7;
 
-    background-color: rgb(194, 145, 201);
+    background-color: var(--color-light-purple);
 }
 
 /***********future-education2***********/
@@ -700,7 +713,7 @@
     grid-column: 10 / 12;
     grid-row: 5 / 7;
 
-    background-color: rgb(162, 79, 173);
+    background-color: var(--color-light-grey);
 }
 
 /***********future-education3***********/
@@ -708,7 +721,7 @@
     grid-column: 7 / 9;
     grid-row: 7 / 9;
 
-    background-color: rgb(162, 79, 173);
+    background-color: var(--color-light-grey);
 }
 
 /***********future-education4***********/
@@ -716,7 +729,7 @@
     grid-column: 9 / 12;
     grid-row: 7 / 9;
 
-    background-color: rgb(194, 145, 201);
+    background-color: var(--color-light-purple);
 }
 
 /***********future-education5***********/
@@ -724,7 +737,7 @@
     grid-column: 7 / 10;
     grid-row: 9 / 11;
 
-    background-color: rgb(194, 145, 201);
+    background-color: var(--color-light-purple);
 }
 
 /***********future-education6***********/
@@ -732,7 +745,7 @@
     grid-column: 10 / 12;
     grid-row: 9 / 11;
 
-    background-color: rgb(162, 79, 173);
+    background-color: var(--color-light-grey);
 }
 
 /***********h3-future-jobs***********/
@@ -740,7 +753,7 @@
     grid-column: 8 / 11;
     grid-row: 12 / 13;
     
-    background-color: yellow;
+    background-color: var(--color-pink);
 }
 
 /***********future-jobs1***********/
@@ -748,7 +761,7 @@
     grid-column: 7 / 12;
     grid-row: 13 / 14;
 
-    background-color: rgb(191, 154, 196);
+    background-color: var(--color-light-purple);
 }
 
 /***********future-jobs2***********/
@@ -756,7 +769,7 @@
     grid-column: 7 / 12;
     grid-row: 14 / 15;
 
-    background-color: rgb(162, 79, 173);
+    background-color: var(--color-light-grey);
 }
 
 
@@ -797,10 +810,10 @@
 }
 
 .review-name {
-    border: 1px solid silver;
+    border: 1px solid var(--color-dark-grey);
     border-radius: 10px;
 
-    background-color: #c8c2c2ba;
+    background-color: var(--color-grey);
 
     display: flex;
     flex-direction: column;
@@ -820,7 +833,7 @@
     width: 100%;
     height: auto;
 
-    background-color: #7E3FB1;
+    background-color: var(--color-purple);
 }
 
 .interests-container {
@@ -837,12 +850,12 @@
 }
 
 .interests-container > div {
-    border: 1px solid grey;
+    border: 1px solid var(--color-grey);
     border-radius: 10px;
 }
 
 .interests .h2 {
-    color: rgb(208 204 204);
+    color: var(--color-light-grey);
 }
 
 .interest-dogs,
@@ -1006,8 +1019,8 @@
 
 .contacts a {
     font-size: 25px;
-    color: rgb(208 204 204);
-    background-color: #7E3FB1;
+    color: var(--color-light-grey);
+    background-color: var(--color-purple);
     text-decoration: none;
     text-transform: uppercase;
 
@@ -1015,15 +1028,8 @@
     align-items: center;
     justify-content: center;
 
-    border: 1px solid grey;
+    border: 1px solid var(--color-dark-grey);
     border-radius: 10px;
-}
-
-.contacts a:hover {
-    transform: scale(1.1);
-    transition: 0.8s;
-
-    background-color: rgb(74, 168, 82);
 }
 
 .h2-contacts {
@@ -1056,8 +1062,8 @@
     width: 100vw;
     height: 5vh;
 
-    background-color: rgb(92, 91, 91);
-    color: rgb(208 204 204);
+    background-color: var(--color-dark-grey);
+    color: var(--color-light-grey);
 
     display: flex;
     justify-content: center;
