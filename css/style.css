@@ -4,7 +4,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    outline: 1px solid red;
 }
 
 
@@ -59,7 +58,6 @@
 }
 
 
-
 /**********************brand************************/
 .brand {
     text-decoration: none;
@@ -68,12 +66,10 @@
 .brand:hover {
     transform: scale(1.1);
     transition: 0.8s;
-
-    color: var(--color-dark-purple);
 }
 
 .brand h1 {
-    color: var(--color-light-grey);
+    color: var(--color-lightest-grey);
     font-size: 40px;
     font-family: 'Dancing Script', cursive;
 }
@@ -88,7 +84,7 @@
     padding: 10px 5px;
     border-radius: 20px;
 
-    color: var(--color-light-grey);
+    color: var(--color-lightest-grey);
     font-size: 20px;
     font-weight: 700;
     text-decoration: none;
@@ -101,8 +97,6 @@
 .nav-itself a:hover {
     transform: scale(1.1);
     transition: 0.8s;
-
-    background-color: var(--color-grey);
 
     border: 1px solid var(--color-grey);
     border-radius: 20px;
@@ -119,8 +113,8 @@
 /************************************HERO*********************************************/
 .hero {
     width: 100vw;
-    height: 70vh;
-    padding-top: 20vh;
+    height: auto;
+    padding: 20vh 0 10vh 0;
 
     background-color: var(--color-purple);
 }
@@ -144,6 +138,7 @@
 .hero-h2 {
     font-family: 'Dancing Script', cursive;
     font-size: 75px;
+    color: var(--color-lightest-grey);
 }
 
 .hero-h2 span {
@@ -151,12 +146,13 @@
 }
 
 .hero-btn {
-    color: var(--color-purple);
+    color: var(--color-dark-purple);
     font-size: 25px;
-    background-color: var(--color-grey);
+    background-color: var(--color-lightest-grey);
     text-decoration: none;
+    text-transform: uppercase;
     
-    width: 150px;
+    width: 20vw;
     text-align: center;
     padding: 10px 5px;
     border: 1px solid var(--color-white);
@@ -217,6 +213,7 @@
     grid-template-columns: repeat(11, 1fr);
     grid-template-rows: repeat(10, 1fr);
     grid-row-gap: 0.5rem;
+    grid-column-gap: 0.5rem;
 }
 
 .h2 {
@@ -233,7 +230,7 @@
 }
 
 .intro p {
-    font-size: 18px;
+    font-size: 17px;
 }
 
 .status-item {
@@ -243,7 +240,7 @@
     text-align: center;
 
     background-color: var(--color-purple);
-    color: var(--color-light-grey);
+    color: var(--color-lightest-grey);
 
     display: flex;
     justify-content: center;
@@ -281,7 +278,7 @@
 
 /***********current-adress**********/
 .current-address {
-    grid-column: 2 / 5;
+    grid-column: 1 / 6;
     grid-row: 10 / 11;
 }
 
@@ -293,13 +290,13 @@
 
 /***********job-situation**********/
 .job-situation {
-    grid-column: 8 / 11;
+    grid-column: 7 / 12;
     grid-row: 10 / 11;
 }
 
 /*************age******************/
 .age {
-    grid-column: 4 / 6;
+    grid-column: 3 / 6;
     grid-row: 9 / 10;
 }
 
@@ -311,13 +308,13 @@
 
 /***********education***********/
 .education {
-    grid-column: 7 / 9;
+    grid-column: 7 / 10;
     grid-row: 9 / 10;
 }
 
 
-/**********************skills************************/
-.skills {
+/*************************************skills*******************************/
+#skills {
     width: 100%;
     height: auto;
 
@@ -332,7 +329,7 @@
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: repeat(11, 1fr);
-    grid-template-rows: repeat(9, 1fr);
+    grid-template-rows: repeat(8, 1fr);
 }
 
 .skills-container h3 {
@@ -342,8 +339,8 @@
     text-align: center;
 }
 
-.skills .h2 {
-    color: var(--color-light-grey);
+#skills .h2 {
+    color: var(--color-lightest-grey);
 }
 
 .skills-container p {
@@ -353,8 +350,9 @@
 
 .skills-container div {
     border-radius: 10px;
+    padding: 1vh 0;
 
-    background-color: var(--color-light-grey);
+    background-color: var(--color-lightest-grey);
 }
 
 
@@ -367,7 +365,7 @@
 /***********html*********/
 .html {
     grid-column: 1 / 6;
-    grid-row: 4 / 5;
+    grid-row: 3 / 4;
 
     background-color: var(--color-light-purple);
 }
@@ -375,7 +373,7 @@
 /***********css***********/
 .css {
     grid-column: 7 / 12;
-    grid-row: 4 / 5;
+    grid-row: 3 / 4;
 
     background-color: var(--color-light-purple);
 }
@@ -383,7 +381,7 @@
 /********git-github*******/
 .git-github {
     grid-column: 7 / 12;
-    grid-row: 5 / 6;
+    grid-row: 4 / 5;
 
     background-color: var(--color-purple);
 }
@@ -391,7 +389,7 @@
 /***********canva***********/
 .canva {
     grid-column: 7 / 12;
-    grid-row: 6 / 7;
+    grid-row: 5 / 6;
 
     background-color: var(--color-light-purple);
 }
@@ -399,7 +397,7 @@
 /***********js***********/
 .js {
     grid-column: 1 / 6;
-    grid-row: 5 / 6;
+    grid-row: 4 / 5;
 
     background-color: var(--color-purple);
 }
@@ -407,7 +405,7 @@
 /********eng-language******/
 .eng-language {
     grid-column: 1 / 6;
-    grid-row: 6 / 7;
+    grid-row: 5 / 6;
 
     background-color: var(--color-light-purple);
 }
@@ -415,7 +413,7 @@
 /********cze-language********/
 .cze-language {
     grid-column: 1 / 6;
-    grid-row: 7 / 8;
+    grid-row: 6 / 7;
 
     background-color: var(--color-purple);
 }
@@ -423,7 +421,7 @@
 /********svk-language********/
 .svk-language {
     grid-column: 7 / 12;
-    grid-row: 7 / 8;
+    grid-row: 6 / 7;
 
     background-color: var(--color-purple);
 }
@@ -431,7 +429,7 @@
 /***********ms-office*******/
 .ms-office {
     grid-column: 7 / 12;
-    grid-row: 8 / 9;
+    grid-row: 7 / 8;
 
     background-color: var(--color-light-purple);
 }
@@ -439,7 +437,7 @@
 /***********online-mkt*******/
 .online-mkt {
     grid-column: 1 / 6;
-    grid-row: 8 / 9;
+    grid-row: 7 / 8;
 
     background-color: var(--color-light-purple);
 }
@@ -449,8 +447,8 @@
 
 
 
-/**********************projects************************/
-.projects {
+/*******************************projects********************************/
+#projects {
     width: 85vw;
     height: auto;
     margin: 0 auto;
@@ -485,8 +483,8 @@
 .project1, 
 .project2,
 .project3 {
-    border: 2px solid var(--color-purple);
     border-radius: 10px;
+    padding: 2vh 1vh;
     
     display: flex;
     flex-direction: column;
@@ -499,25 +497,22 @@
     font-size: 25px;
 }
 
-.projects p {
+#projects p {
     font-size: 18px;
 }
 
-.projects a {
+#projects a {
     font-weight: 700;
     text-decoration: none;
     background-color: var(--color-purple);
-    color: var(--color-light-grey);
+    color: var(--color-white);
 
-    width: 50%;
     border-radius: 10px;
-    padding: 10px 5px;
+    padding: 10px 10px;
     align-self: center;
 }
 
 .projects a:hover {
-    background-color: var(--color-light-purple);
-
     transform: scale(1.05);
     transition: 0.8s;
 }
@@ -554,8 +549,8 @@
 
 
 
-/**********************future************************/
-.future {
+/********************************future*********************************/
+#future {
     width: 100%;
     height: auto;
 
@@ -571,30 +566,27 @@
 
     display: grid;
     grid-template-columns: repeat(11, 1fr);
-    grid-template-rows: repeat(15, 1fr);
+    grid-template-rows: repeat(14, 1fr);
     gap: 1rem;
 }
 
-.future .h2 {
-        color: var(--color-light-grey);
+#future .h2 {
+        color: var(--color-lightest-grey);
 }
 
-.future .h3 {
+#future .h3 {
     font-size: 25px;
 
     display: flex;
     justify-content: center;
     align-items: center;
-
-    border: 1px solid var(--color-grey);
-    border-radius: 10px;
 }
 
-.future h4 {
+#future h4 {
     font-size: 20px;
 }
 
-.future div {
+#future div {
     border-radius: 10px;
 }
 
@@ -607,177 +599,211 @@
 /***********h3-future-projects***********/
 .h3-future-projects {
     grid-column: 2 / 5;
-    grid-row: 4 / 5;
-
-    background-color: var(--color-pink);
+    grid-row: 3 / 4;
+    
+    color: var(--color-lightest-grey);
 }
 
 /***********future-project1***********/
 .future-project1 {
     grid-column: 1 / 6;
-    grid-row: 5 / 6;
+    grid-row: 4 / 5;
 
     background-color: var(--color-light-purple);
+
+    padding: 0 1vw;
 }
 
 /***********future-project2***********/
 .future-project2 {
     grid-column: 1 / 6;
-    grid-row: 6 / 7;
+    grid-row: 5 / 6;
 
-    background-color: var(--color-light-grey);
+    background-color: var(--color-lightest-grey);
+
+    padding: 0 1vw;
 }
 
 /***********future-project3***********/
 .future-project3 {
     grid-column: 1 / 6;
-    grid-row: 7 / 8;
+    grid-row: 6 / 7;
 
     background-color: var(--color-light-purple);
+
+    padding: 0 1vw;
 }
 
 /***********future-project4***********/
 .future-project4 {
     grid-column: 1 / 6;
-    grid-row: 8 / 9;
+    grid-row: 7 / 8;
 
-    background-color: var(--color-light-grey);
+    background-color: var(--color-lightest-grey);
+
+    padding: 0 1vw;
 }
 
 /***********future-project5***********/
 .future-project5 {
     grid-column: 1 / 6;
-    grid-row: 9 / 10;
+    grid-row: 8 / 9;
 
     background-color: var(--color-light-purple);
+
+    padding: 0 1vw;
 }
 
 /***********future-project6***********/
 .future-project6 {
     grid-column: 1 / 6;
-    grid-row: 10 / 11;
+    grid-row: 9 / 10;
 
-    background-color: var(--color-light-grey);
+    background-color: var(--color-lightest-grey);
+
+    padding: 0 1vw;
 }
 
 /***********future-project7***********/
 .future-project7 {
     grid-column: 1 / 6;
-    grid-row: 11 / 12;
+    grid-row: 10 / 11;
 
     background-color: var(--color-light-purple);
+
+    padding: 0 1vw;
 }
 
 /***********future-project8***********/
 .future-project8 {
     grid-column: 1 / 6;
-    grid-row: 12 / 13;
+    grid-row: 11 / 12;
 
-    background-color: var(--color-light-grey);
+    background-color: var(--color-lightest-grey);
+
+    padding: 0 1vw;
 }
 
 /***********future-project9***********/
 .future-project9 {
     grid-column: 1 / 6;
-    grid-row: 13 / 14;
+    grid-row: 12 / 13;
 
     background-color: var(--color-light-purple);
+
+    padding: 0 1vw;
 }
 
 /***********future-project10***********/
 .future-project10 {
     grid-column: 1 / 6;
-    grid-row: 14 / 15;
+    grid-row: 13 / 14;
 
-    background-color: var(--color-light-grey);
+    background-color: var(--color-lightest-grey);
+
+    padding: 0 1vw;
 }
 
 /***********h3-future-education***********/
 .h3-future-education {
     grid-column: 8 / 11;
-    grid-row: 4 / 5;
+    grid-row: 3 / 4;
 
-    background-color: var(--color-pink);
+    color: var(--color-lightest-grey);
 }
 
 /***********future-education1***********/
 .future-education1 {
     grid-column: 7 / 10;
-    grid-row: 5 / 7;
+    grid-row: 4 / 6;
 
     background-color: var(--color-light-purple);
+
+    padding: 3vh 1vw;
 }
 
 /***********future-education2***********/
 .future-education2 {
     grid-column: 10 / 12;
-    grid-row: 5 / 7;
+    grid-row: 4 / 6;
 
-    background-color: var(--color-light-grey);
+    background-color: var(--color-lightest-grey);
+
+    padding: 3vh 1vw;
 }
 
 /***********future-education3***********/
 .future-education3 {
     grid-column: 7 / 9;
-    grid-row: 7 / 9;
+    grid-row: 6 / 8;
 
-    background-color: var(--color-light-grey);
+    background-color: var(--color-lightest-grey);
+
+    padding: 3vh 1vw;
 }
 
 /***********future-education4***********/
 .future-education4 {
     grid-column: 9 / 12;
-    grid-row: 7 / 9;
+    grid-row: 6 / 8;
 
     background-color: var(--color-light-purple);
+
+    padding: 3vh 1vw;
 }
 
 /***********future-education5***********/
 .future-education5 {
     grid-column: 7 / 10;
-    grid-row: 9 / 11;
+    grid-row: 8 / 10;
 
     background-color: var(--color-light-purple);
+
+    padding: 3vh 1vw;
 }
 
 /***********future-education6***********/
 .future-education6 {
     grid-column: 10 / 12;
-    grid-row: 9 / 11;
+    grid-row: 8 / 10;
 
-    background-color: var(--color-light-grey);
+    background-color: var(--color-lightest-grey);
+
+    padding: 3vh 1vw;
 }
 
 /***********h3-future-jobs***********/
 .h3-future-jobs {
     grid-column: 8 / 11;
-    grid-row: 12 / 13;
+    grid-row: 10 / 11;
     
-    background-color: var(--color-pink);
+    color: var(--color-lightest-grey);
 }
 
 /***********future-jobs1***********/
 .future-jobs1 {
     grid-column: 7 / 12;
-    grid-row: 13 / 14;
+    grid-row: 11 / 13;
 
     background-color: var(--color-light-purple);
+
+    padding: 4vh 0;
 }
 
 /***********future-jobs2***********/
 .future-jobs2 {
     grid-column: 7 / 12;
-    grid-row: 14 / 15;
+    grid-row: 13 / 14;
 
-    background-color: var(--color-light-grey);
+    background-color: var(--color-lightest-grey);
 }
 
 
 
 
 
-/**********************reviews************************/
-.reviews {
+/**********************************reviews*******************************/
+#reviews {
     width: 85vw;
     height: auto;
     margin: 0 auto;
@@ -799,6 +825,11 @@
     flex-direction: column;
     justify-content: flex-end;
     row-gap: 2rem;
+
+    border-radius: 10px;
+    padding: 2vh 1vw;
+
+    background-color: var(--color-grey);
 }
 
 .review p {
@@ -809,27 +840,18 @@
     margin-bottom: 3rem;
 }
 
-.review-name {
-    border: 1px solid var(--color-dark-grey);
-    border-radius: 10px;
-
-    background-color: var(--color-grey);
-
-    display: flex;
-    flex-direction: column;
-    row-gap: 1rem;
-}
-
 .review-name h3 {
-    font-size: 25px;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: var(--color-purple);
 }
 
 
 
 
 
-/**********************interests************************/
-.interests {
+/********************************interests********************************/
+#interests {
     width: 100%;
     height: auto;
 
@@ -849,13 +871,8 @@
     gap: 1rem;
 }
 
-.interests-container > div {
-    border: 1px solid var(--color-grey);
-    border-radius: 10px;
-}
-
-.interests .h2 {
-    color: var(--color-light-grey);
+#interests .h2 {
+    color: var(--color-lightest-grey);
 }
 
 .interest-dogs,
@@ -872,6 +889,7 @@
 
 .interests-container h3 {
     font-size: 25px;
+    text-transform: uppercase;
 
     position: absolute;
     left: 15px;
@@ -884,7 +902,7 @@
     background-size: cover;
 
     width: 100%;
-    height: calc(100% - 24px);
+    height: 100%;
 }
 
 .h2-interests {
@@ -1004,8 +1022,8 @@
 
 
 
-/**********************contacts************************/
-.contacts {
+/*************************************contacts*****************************/
+#contacts {
     width: 85vw;
     height: auto;
     margin: 0 auto 10vh auto;
@@ -1017,19 +1035,29 @@
     grid-template-rows: repeat(3, 1fr);
 }
 
-.contacts a {
-    font-size: 25px;
-    color: var(--color-light-grey);
-    background-color: var(--color-purple);
-    text-decoration: none;
-    text-transform: uppercase;
+#contacts h3 {
+    color: var(--color-dark-purple);
+    font-size: 22px; 
+}
 
+#contacts a {
+    font-size: 16px;
+    color: var(--color-white);
+    background-color: var(--color-purple);
+    font-weight: 700;
+    
     display: flex;
     align-items: center;
     justify-content: center;
 
-    border: 1px solid var(--color-dark-grey);
+    margin-top: 1vh;
     border-radius: 10px;
+    padding: 5px 0;
+}
+
+#contacts a:hover {
+    transform: scale(1.05);
+    transition: 0.8s;
 }
 
 .h2-contacts {
@@ -1063,7 +1091,7 @@
     height: 5vh;
 
     background-color: var(--color-dark-grey);
-    color: var(--color-light-grey);
+    color: var(--color-lightest-grey);
 
     display: flex;
     justify-content: center;
